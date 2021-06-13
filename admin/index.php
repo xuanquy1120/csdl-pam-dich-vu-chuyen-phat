@@ -17,6 +17,8 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+  <link href = "./css/index.css" rel = "stylesheet">
+
 </head>
 
 <body class="bg-gradient-primary">
@@ -32,16 +34,16 @@
           <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-6 d-none d-lg-block"><img src="image/Logo (5).jpg" alt="boy reading a book" style="width:100%;"></div>
-              <div class="col-lg-6">
+              <div class="col-lg-6 d-none d-lg-block" style= " padding: 0 !important;"><img src="image/Logo (5).jpg" alt="boy reading a book" style="width:100%; "></div>
+              <div class="col-lg-6 form-login" style="margin: none">
                 <div class="p-5" style="margin-top:50px;">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Chào mừng trở lại!
-                      <p>admin</p>
+                    <h1 id = "test" class="h4 mb-4" style = "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 32px; color: rgb(180, 25, 0); font-weight: 600; ">Welcome back to PAM
+                      <p>Admin</p>
                     </h1>
                   </div>
 
-                  <form class="user" action="loginfetch.php" method="post">
+                  <form class="user" method="post">
                   <?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
@@ -53,15 +55,11 @@
                     </div>
                    
                     <p>
-                     <input class="btn btn-primary btn-user btn-block" type="submit" name="log" value="Đăng nhập">
-
-                    </p>
-                    
-                    
-                  </form>
-                  
-                  
-                 
+                     <input class="btn btn-primary btn-user btn-block" type="submit" name="log" value="Login">
+                    </p> 
+                    <p class="error-message" id = "name-error" style= "text-align: center; margin-bottom: 0">Hello xin chào</p>                  
+                    <p class="error-message" id = "pass-error" style= "text-align: center; margin-top: 0; margin-bottom: 0">Hello xin chào</p>                  
+                  </form>       
                 </div>
               </div>
             </div>
@@ -83,6 +81,7 @@
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+  <script src="./js/index.js"></script>
 
 </body>
     <script>

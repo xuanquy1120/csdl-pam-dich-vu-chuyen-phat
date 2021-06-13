@@ -18,6 +18,7 @@ $ps=$_POST['password'];
 //check for duplicate data
 $sel="SELECT * FROM admin WHERE username='$e' && password='$ps'";
 $r=$con->query($sel);
+
 if($r->num_rows> 0){
 	while($row=$r->fetch_assoc()){
     $_SESSION['userid']=$row['id'];
@@ -26,10 +27,9 @@ if($r->num_rows> 0){
 	header('location:user.php');
 }
 }
-
 else{ ?>
 	<script>
-		alert("Đăng nhập sai !");
+		alert("Your information not match!");
 		window.location="index.php";
 	</script>
 	<?php } ?>
