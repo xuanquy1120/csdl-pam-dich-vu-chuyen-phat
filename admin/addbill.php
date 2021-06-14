@@ -28,7 +28,7 @@ if (isset($_SESSION['userid']) && isset($_SESSION['username'])) {
 <body id="page-top">
   <style>
     .error-message{
-	  /* display: none; */
+	  display: none;
 	  color: red !important;
     }
   </style>
@@ -124,54 +124,54 @@ if (isset($_SESSION['userid']) && isset($_SESSION['username'])) {
         <div class="form-group">
                         <label>Mã hóa đơn:</label>
                         <input class="form-control"  type="text" name="bill_id" id="billId" placeholder="Nhập mã hóa đơn VD: ETH 00001">   
-                        <p id ="idBillErr" class="error-message">Hello</p>               
+                        <p id ="idBillErr" class="error-message"></p>               
                     </div>
                     <div class="form-group">
                         <label>Tên người gửi: </label>
                         <input class="form-control"  type="text" name="customer_sendname" id="customerSendname" placeholder="Nhập mã hóa đơn">
-                        <p id = "cusSentErr" class="error-message">Hello</p>               
+                        <p id = "cusSentErr" class="error-message"></p>               
 
                     </div>
                     <div class="form-group">
                         <label>Số điện thoại người gửi: </label>
                         <input class="form-control"  type="number" name="customer_sendtel" id="customerSendtel" placeholder="Nhập số điện thoại người gửi">  
-                        <p id="cusPhoneErr" class="error-message">Hello</p>               
+                        <p id="cusPhoneErr" class="error-message"></p>               
 
                     </div>
                     <div class="form-group">
                         <label>Tên người nhận: </label>
                         <input class="form-control"  type="text" name="customer_receivername" id="customerReceivername" placeholder="Nhập tên người nhận "> 
-                        <p id="receiveNameErr" class="error-message">Hello</p>               
+                        <p id="receiveNameErr" class="error-message"></p>               
 
                     </div>
                     <div class="form-group">
                         <label>Số điện thoại người nhận: </label>
                         <input class="form-control"  type="number" name="customer_receivertel" id="customerReceivertel" placeholder="Nhập số điện thoại người nhận">   
-                        <p id ="ReceivePhoneErr" class="error-message">Hello</p>               
+                        <p id ="ReceivePhoneErr" class="error-message"></p>               
 
                     </div>
                     <div class="form-group">
                         <label>Địa chỉ người gửi: </label>
                         <input class="form-control"  type="text" name="customer_sendadr" id="customerSendadr" placeholder="Nhập địa chỉ người gửi:"> 
-                        <p id="sentAddErr" class="error-message">Hello</p>               
+                        <p id="sentAddErr" class="error-message"></p>               
 
                     </div>
                     <div class="form-group">
                         <label>Địa chỉ người nhận: </label>
                         <input class="form-control"  type="text" name="customer_receiveradr" id="customerReceiveradr" placeholder="Nhập địa chỉ người nhận">   
-                        <p id = "receiveAddErr" class="error-message">Hello</p>               
+                        <p id = "receiveAddErr" class="error-message"></p>               
 
                     </div>
                     <div class="form-group">
                         <label>Cân nặng: </label>
                         <input class="form-control"  type="number" name="weight" id="weight" placeholder="Nhập Cân nặng (đơn vị: kg)">   
-                        <p id= "weightErr" class="error-message">Hello</p>               
+                        <p id= "weightErr" class="error-message"></p>               
 
                     </div>
                     <div class="form-group">
                         <label>Tổng tiền: </label>
                         <input class="form-control"  type="number" name="fee" id="fee" placeholder="Nhập Tổng tiền">   
-                        <p id="feeErr" class="error-message">Hello</p>               
+                        <p id="feeErr" class="error-message"></p>               
                         
                     </div>
                     <div class="form-group">
